@@ -8,12 +8,12 @@ mapmap = map <<< map
 infixl 4 mapmap as <$$>
 
 mapmapmap :: forall f g h a b. Functor f => Functor g => Functor h => (a -> b) -> f (g (h a)) -> f (g (h b))
-mapmapmap = map <<< mapmap
+mapmapmap = map <<< map <<< map
 
 infixl 4 mapmapmap as <$$$>
 
 mapmapmapmap :: forall f g h i a b. Functor f => Functor g => Functor h => Functor i => (a -> b) -> f (g (h (i a))) -> f (g (h (i b)))
-mapmapmapmap = map <<< mapmapmap
+mapmapmapmap = map <<< map <<< map <<< map
 
 infixl 4 mapmapmapmap as <$$$$>
 
