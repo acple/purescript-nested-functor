@@ -1,1 +1,1 @@
-# purescript-mapmap
+# purescript-nested-functor
