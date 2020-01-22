@@ -60,6 +60,3 @@ test8 = nmap (identity :: h (i Int) -> h (i Int))
 
 test9 :: forall f g h i. Functor f => Functor g => Functor h => Functor i => f (g (h (i Int))) -> f (g (h (i Int)))
 test9 = nmap (identity :: g (h (i Int)) -> g (h (i Int)))
-
-test10 :: forall f g h i. Functor f => Functor g => Functor h => Functor i => f (g (h (i Int))) -> f (g (h (i Int)))
-test10 = nmap (identity :: f (g (h (i Int))) -> f (g (h (i Int))))

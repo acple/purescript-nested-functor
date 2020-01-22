@@ -11,8 +11,8 @@ class NestedFunctor fa fb a b | fb a b -> fa, fa fb b -> a where
 
 infixl 4 nmap as <$$>
 
-instance applyNestedFunctor :: NestedFunctor a b a b where
-  nmap = identity
+instance singleNestedFunctor :: Functor f => NestedFunctor (f a) (f b) a b where
+  nmap = map
 else
 instance nestedNestedFunctor :: (Functor f, NestedFunctor ga gb a b) => NestedFunctor (f ga) (f gb) a b where
   nmap = map <<< nmap
