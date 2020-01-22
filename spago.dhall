@@ -1,5 +1,5 @@
 { name = "nested-functor"
-, dependencies = [ "prelude" ]
+, dependencies = [ "prelude", "type-equality" ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs" ]
 }

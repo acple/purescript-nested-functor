@@ -9,6 +9,7 @@ import Data.Identity (Identity(..))
 import Data.Maybe (Maybe(..), maybe)
 import Effect (Effect)
 import Effect.Class.Console (log)
+import Unsafe.Coerce (unsafeCoerce)
 
 main :: Effect Unit
 main = do
@@ -60,3 +61,6 @@ test8 = nmap (identity :: h (i Int) -> h (i Int))
 
 test9 :: forall f g h i. Functor f => Functor g => Functor h => Functor i => f (g (h (i Int))) -> f (g (h (i Int)))
 test9 = nmap (identity :: g (h (i Int)) -> g (h (i Int)))
+
+test10 :: forall f g h i a. Functor f => Functor g => Functor h => Functor i => f (g (h (i a))) -> f (g (h (i String)))
+test10 = nmap (unsafeCoerce :: _ -> _) -- :: a -> String
