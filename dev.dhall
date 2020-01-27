@@ -1,7 +1,7 @@
 let conf = ./spago.dhall
 
-in conf // {
-  dependencies = conf.dependencies #
+in conf //
+  { dependencies = conf.dependencies #
     [ "console"
     , "effect"
     , "either"
@@ -9,5 +9,5 @@ in conf // {
     , "psci-support"
     , "unsafe-coerce"
     ]
-, sources = conf.sources # [ "test/**/*.purs" ]
-}
+  , sources = conf.sources # [ "test/**/*.purs" ]
+  }
