@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "spago build",
+    "clean": "rimraf output && rimraf .spago",
+    "test": "spago -x dev.dhall test",
+    "postinstall": "spago build -d"
+  },
+  "devDependencies": {
+    "bower": "^1.8.8",
+    "purescript": "^0.13.6",
+    "rimraf": "^3.0.0",
+    "spago": "^0.13.1"
+  }
+}
