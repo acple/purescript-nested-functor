@@ -1,0 +1,20 @@
+{
+    "name": "purescript-nested-functor",
+    "license": [
+        "BSD-3-Clause"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/acple/purescript-nested-functor.git"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "output"
+    ],
+    "dependencies": {
+        "purescript-prelude": "^v4.1.1",
+        "purescript-type-equality": "^v3.0.0"
+    }
+}
