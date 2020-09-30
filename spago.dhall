@@ -3,5 +3,5 @@
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs" ]
 , license = "BSD-3-Clause"
-, repository = "git://github.com/acple/purescript-nested-functor.git"
+, repository = "https://github.com/acple/purescript-nested-functor.git"
 }
