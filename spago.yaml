@@ -17,6 +17,6 @@ package:
       - either: ">=6.0.0 <7.0.0"
       - foldable-traversable: ">=6.0.0 <7.0.0"
       - identity: ">=6.0.0 <7.0.0"
-      - psci-support: ">=6.0.0 <7.0.0"
+      - maybe: ">=6.0.0 <7.0.0"
       - unsafe-coerce: ">=6.0.0 <7.0.0"
 workspace: {}
