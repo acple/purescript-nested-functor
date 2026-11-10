@@ -1,0 +1,22 @@
+package:
+  name: nested-functor
+  publish:
+    version: 0.2.2
+    license: BSD-3-Clause
+    location:
+      githubOwner: acple
+      githubRepo: purescript-nested-functor
+  dependencies:
+    - prelude: ">=4.1.1 <7.0.0"
+    - type-equality: ">=3.0.0 <5.0.0"
+  test:
+    main: Test.Main
+    dependencies:
+      - console: ">=6.0.0 <7.0.0"
+      - effect: ">=4.0.0 <5.0.0"
+      - either: ">=6.0.0 <7.0.0"
+      - foldable-traversable: ">=6.0.0 <7.0.0"
+      - identity: ">=6.0.0 <7.0.0"
+      - maybe: ">=6.0.0 <7.0.0"
+      - unsafe-coerce: ">=6.0.0 <7.0.0"
+workspace: {}
