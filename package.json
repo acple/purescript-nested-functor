@@ -3,13 +3,12 @@
   "scripts": {
     "build": "spago build",
     "clean": "rimraf output && rimraf .spago",
-    "test": "spago -x dev.dhall test",
-    "postinstall": "spago build -d"
+    "test": "spago test",
+    "postinstall": "spago build && spago docs"
   },
   "devDependencies": {
-    "bower": "^1.8.8",
-    "purescript": "^0.13.6",
+    "purescript": "^0.15.16",
     "rimraf": "^3.0.0",
-    "spago": "^0.13.1"
+    "spago": "^1.0.5"
   }
 }

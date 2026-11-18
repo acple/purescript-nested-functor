@@ -63,4 +63,4 @@ test9 :: forall f g h i. Functor f => Functor g => Functor h => Functor i => f (
 test9 = nmap (identity :: g (h (i Int)) -> g (h (i Int)))
 
 test10 :: forall f g h i a. Functor f => Functor g => Functor h => Functor i => f (g (h (i a))) -> f (g (h (i String)))
-test10 = nmap (unsafeCoerce :: _ -> _) -- :: a -> String
+test10 = nmap (unsafeCoerce :: a -> String)
